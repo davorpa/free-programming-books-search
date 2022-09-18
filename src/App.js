@@ -111,7 +111,7 @@ function App() {
       setLoading(false);
     }
     fetchData();
-  }, []);
+  }, [cookies, queries.lang]);// eslint-disable-line react-hooks/exhaustive-deps
 
   // fires when searchTerm changes
   // Finds most relevant title or author
